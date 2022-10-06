@@ -10,32 +10,54 @@ public class Calcolatrice
         this.b = 0;
     }
 
-    public int somma(int a, int b)
+    public Calcolatrice(int a, int b)
+    {
+        this.a = a;
+        this.b = b;
+    }
+
+    public int getA()
+    {
+        return a;
+    }
+
+    public void setA(int a)
+    {
+        this.a = a;
+    }
+
+    public int getB()
+    {
+        return b;
+    }
+
+    public void setB(int b)
+    {
+        this.b = b;
+    }
+
+    public int somma()
     {
         return a + b;
     }
 
-    public int moltiplicazione(int a, int b)
+    public int moltiplicazione()
     {
         return a * b;
     }
 
-    public int sottrazione(int a, int b)
+    public int sottrazione()
     {
         return a - b;
     }
 
-    public double divisione(int a, int b)
+    public double divisione()
     {
-        if(b != 0)
+        if (b != 0)
         {
-            return a / b;
+            return a / (double) b;
         }
         else
             return 0;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
     }
 }
